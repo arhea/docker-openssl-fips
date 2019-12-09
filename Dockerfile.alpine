@@ -6,8 +6,6 @@ ENV PATH=/usr/local/bin:$PATH \
 ARG OPENSSL_FIPS_VERSION=2.0.16
 ARG OPENSSL_VERSION=1.0.2t
 
-RUN apk --update add curl perl alpine-sdk
-
 RUN set -ex \
     && apk --update --no-cache add curl perl alpine-sdk \
     && mkdir -p /usr/local/src/ \
